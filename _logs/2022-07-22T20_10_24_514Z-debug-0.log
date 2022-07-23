@@ -1,0 +1,112 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@8.14.0
+2 info using node@v16.13.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\Mithat Kara\OneDrive\Masaüstü\food-shop\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 7ms
+11 timing config:load:file:C:\Users\Mithat Kara\.npmrc Completed in 1ms
+12 timing config:load:user Completed in 2ms
+13 timing config:load:file:C:\Users\Mithat Kara\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 22ms
+19 timing npm:load:configload Completed in 22ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm i reselect@4.0.0
+23 verbose argv "i" "reselect@4.0.0"
+24 timing npm:load:setTitle Completed in 1ms
+25 timing config:load:flatten Completed in 3ms
+26 timing npm:load:display Completed in 6ms
+27 verbose logfile logs-max:10 dir:C:\Users\Mithat Kara\OneDrive\Masaüstü\food-shop\_logs
+28 verbose logfile C:\Users\Mithat Kara\OneDrive\Masaüstü\food-shop\_logs\2022-07-22T20_10_24_514Z-debug-0.log
+29 timing npm:load:logFile Completed in 6ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 38ms
+33 timing arborist:ctor Completed in 0ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 780ms
+37 timing idealTree:userRequests Completed in 4ms
+38 silly idealTree buildDeps
+39 silly fetch manifest reselect@4.0.0
+40 timing arborist:ctor Completed in 0ms
+41 http fetch GET 200 https://registry.npmjs.org/reselect 823ms (cache miss)
+42 silly placeDep ROOT reselect@4.0.0 OK for: food-shop@0.1.0 want: 4.0.0
+43 timing idealTree:#root Completed in 833ms
+44 silly fetch manifest typescript@>= 2.7
+45 http fetch GET 200 https://registry.npmjs.org/typescript 609ms (cache miss)
+46 silly placeDep ROOT typescript@4.7.4 OK for: fork-ts-checker-webpack-plugin@6.5.2 want: >= 2.7
+47 timing idealTree:node_modules/fork-ts-checker-webpack-plugin Completed in 641ms
+48 silly fetch manifest react@^16.8.3 || ^17
+49 http fetch GET 200 https://registry.npmjs.org/react 83ms (cache revalidated)
+50 timing idealTree Completed in 2364ms
+51 timing command:i Completed in 2378ms
+52 verbose stack Error: could not resolve
+52 verbose stack     at PlaceDep.failPeerConflict (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\place-dep.js:549:25)
+52 verbose stack     at PlaceDep.place (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\place-dep.js:199:21)
+52 verbose stack     at new PlaceDep (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\place-dep.js:73:10)
+52 verbose stack     at C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:990:31
+52 verbose stack     at Array.map (<anonymous>)
+52 verbose stack     at Arborist.[buildDepStep] (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:990:8)
+52 verbose stack     at async Arborist.buildIdealTree (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:218:7)
+52 verbose stack     at async Promise.all (index 1)
+52 verbose stack     at async Arborist.reify (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:154:5)
+52 verbose stack     at async Install.exec (C:\Users\Mithat Kara\AppData\Roaming\npm\node_modules\npm\lib\commands\install.js:145:5)
+53 verbose cwd C:\Users\Mithat Kara\OneDrive\Masaüstü\food-shop
+54 verbose Windows_NT 10.0.19044
+55 verbose node v16.13.1
+56 verbose npm  v8.14.0
+57 error code ERESOLVE
+58 error ERESOLVE could not resolve
+59 error
+60 error While resolving: [1mreact-redux[22m@[1m7.2.4[22m
+60 error Found: [1mreact[22m@[1m18.2.0[22m[2m[22m
+60 error [2mnode_modules/react[22m
+60 error   [35mpeer[39m [1mreact[22m@"[1m^18.0.0[22m" from [1m@testing-library/react[22m@[1m13.3.0[22m[2m[22m
+60 error   [2mnode_modules/@testing-library/react[22m
+60 error     [1m@testing-library/react[22m@"[1m^13.3.0[22m" from the root project
+60 error   [35mpeer[39m [1mreact[22m@"[1m^18.2.0[22m" from [1mreact-dom[22m@[1m18.2.0[22m[2m[22m
+60 error   [2mnode_modules/react-dom[22m
+60 error     [35mpeer[39m [1mreact-dom[22m@"[1m^18.0.0[22m" from [1m@testing-library/react[22m@[1m13.3.0[22m[2m[22m
+60 error     [2mnode_modules/@testing-library/react[22m
+60 error       [1m@testing-library/react[22m@"[1m^13.3.0[22m" from the root project
+60 error     [35mpeer[39m [1mreact-dom[22m@"[1m>=16.8[22m" from [1mreact-router-dom[22m@[1m6.3.0[22m[2m[22m
+60 error     [2mnode_modules/react-router-dom[22m
+60 error       [1mreact-router-dom[22m@"[1m^6.3.0[22m" from the root project
+60 error     1 more (the root project)
+60 error   4 more (react-router, react-router-dom, react-scripts, the root project)
+60 error
+60 error Could not resolve dependency:
+60 error [35mpeer[39m [1mreact[22m@"[1m^16.8.3 || ^17[22m" from [1mreact-redux[22m@[1m7.2.4[22m[2m[22m
+60 error [2mnode_modules/react-redux[22m
+60 error   [1mreact-redux[22m@"[1m^7.2.4[22m" from the root project
+60 error
+60 error Conflicting peer dependency: [1mreact[22m@[1m17.0.2[22m[2m[22m
+60 error [2mnode_modules/react[22m
+60 error   [35mpeer[39m [1mreact[22m@"[1m^16.8.3 || ^17[22m" from [1mreact-redux[22m@[1m7.2.4[22m[2m[22m
+60 error   [2mnode_modules/react-redux[22m
+60 error     [1mreact-redux[22m@"[1m^7.2.4[22m" from the root project
+60 error
+60 error Fix the upstream dependency conflict, or retry
+60 error this command with --force, or --legacy-peer-deps
+60 error to accept an incorrect (and potentially broken) dependency resolution.
+60 error
+60 error See C:\Users\Mithat Kara\OneDrive\Masaüstü\food-shop\eresolve-report.txt for a full report.
+61 verbose exit 1
+62 timing npm Completed in 2546ms
+63 verbose unfinished npm timer reify 1658520624651
+64 verbose unfinished npm timer reify:loadTrees 1658520624662
+65 verbose unfinished npm timer idealTree:buildDeps 1658520625447
+66 verbose unfinished npm timer idealTree:node_modules/react-redux 1658520626922
+67 verbose code 1
+68 error A complete log of this run can be found in:
+68 error     C:\Users\Mithat Kara\OneDrive\Masaüstü\food-shop\_logs\2022-07-22T20_10_24_514Z-debug-0.log
